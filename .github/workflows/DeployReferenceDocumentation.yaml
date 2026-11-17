@@ -30,24 +30,24 @@ jobs:
 
       - name: Initialize the workflow
         id: init
-        uses: microsoft/AL-Go-Actions/WorkflowInitialize@v10.0
+        uses: ChrisBlankDe/AL-Go/Actions/WorkflowInitialize@chrisblankde-n-level-template-inheritance
         with:
           shell: powershell
 
       - name: Read settings
-        uses: microsoft/AL-Go-Actions/ReadSettings@v10.0
+        uses: ChrisBlankDe/AL-Go/Actions/ReadSettings@chrisblankde-n-level-template-inheritance
         with:
           shell: powershell
 
       - name: Determine ArtifactUrl
         id: determineArtifactUrl
-        uses: microsoft/AL-Go-Actions/DetermineArtifactUrl@v10.0
+        uses: ChrisBlankDe/AL-Go/Actions/DetermineArtifactUrl@chrisblankde-n-level-template-inheritance
         with:
           shell: powershell
 
       - name: Determine Deployment Environments
         id: DetermineDeploymentEnvironments
-        uses: microsoft/AL-Go-Actions/DetermineDeploymentEnvironments@v10.0
+        uses: ChrisBlankDe/AL-Go/Actions/DetermineDeploymentEnvironments@chrisblankde-n-level-template-inheritance
         env:
           GITHUB_TOKEN: ${{ github.token }}
         with:
@@ -60,7 +60,7 @@ jobs:
         uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
 
       - name: Build Reference Documentation
-        uses: microsoft/AL-Go-Actions/BuildReferenceDocumentation@v10.0
+        uses: ChrisBlankDe/AL-Go/Actions/BuildReferenceDocumentation@chrisblankde-n-level-template-inheritance
         with:
           shell: powershell
           artifacts: 'latest'
@@ -78,7 +78,7 @@ jobs:
 
       - name: Finalize the workflow
         if: always()
-        uses: microsoft/AL-Go-Actions/WorkflowPostProcess@v10.0
+        uses: ChrisBlankDe/AL-Go/Actions/WorkflowPostProcess@chrisblankde-n-level-template-inheritance
         env:
           GITHUB_TOKEN: ${{ github.token }}
         with:

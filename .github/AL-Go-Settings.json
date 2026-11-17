@@ -1,5 +1,6 @@
 {
-  "$schema": "https://raw.githubusercontent.com/microsoft/AL-Go-Actions/v10.0/.Modules/settings.schema.json",
+  "$schema": "https://raw.githubusercontent.com/ChrisBlankDe/AL-Go/chrisblankde-n-level-template-inheritance/Actions/.Modules/settings.schema.json",
   "type": "PTE",
-  "templateUrl": "https://github.com/microsoft/AL-Go-PTE@main"
+  "templateUrl": "https://github.com/ChrisBlankDe/AL-Go@chrisblankde-n-level-template-inheritance",
+  "templateSha": "a2d854ec0c9259ab81aeaba43447578151ff1fed"
 }
