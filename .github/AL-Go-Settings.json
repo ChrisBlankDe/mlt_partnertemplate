@@ -2,5 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/ChrisBlankDe/AL-Go/chrisblankde-n-level-template-inheritance/Actions/.Modules/settings.schema.json",
   "type": "PTE",
   "templateUrl": "https://github.com/ChrisBlankDe/AL-Go@chrisblankde-n-level-template-inheritance",
-  "templateSha": "a2d854ec0c9259ab81aeaba43447578151ff1fed"
+  "templateSha": "a2d854ec0c9259ab81aeaba43447578151ff1fed",
+  "useCompilerFolder": true,
+  "doNotPublishApps": true
 }
