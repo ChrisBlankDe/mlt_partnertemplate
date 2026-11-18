@@ -431,6 +431,6 @@ jobs:
     name: 'Initialize Partner'
     needs: [Initialization]
     runs-on: [ windows-latest ]
-    steps: 
+    steps:
       - name: SayHelloPartner
         run: Write-Host "Hello from your Partner"
